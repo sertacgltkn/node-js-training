@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+
+    <style>
+        #question1{
+            margin-left: 300px;
+        }
+        #question2{
+            margin-left: 300px;
+        }
+        #question3{
+            margin-left: 300px;
+        }
+        #question4{
+            margin-left: 300px;
+        }
+        #answer1{
+            margin-left: 300px;
+        }
+        #answer2{
+            margin-left: 300px;
+        }
+        #answer3{
+            margin-left: 300px;
+        }
+        #answer4{
+            margin-left: 300px;
+        }
+        #questions{
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+        #result{
+            margin-left: 300px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div id="questions">
+        <label id="question1"></label>
+        <input type="text" id="answer1">
+        <label id="question2"></label>
+        <input type="text" id="answer2">
+        <label id="question3"></label>
+        <input type="text" id="answer3">
+        <label id="question4"></label>
+        <input type="text" id="answer4">
+        <input type="submit" id="submit" value="submit">
+        <p id="result"></p>
+    </div>
+    
+  <script>
+    const veridizini=[
+        {
+            "id":0,
+            "question":"Kalemin ingilizcesi nedir?",
+            "answer":"Pencil"
+
+        },
+        {
+            "id":1,
+            "question":"Kitabin ingilizcesi nedir?",
+            "answer":"Book"
+
+        },
+          {
+            "id":2,
+            "question":"Karpuzun ingilizcesi nedir?",
+            "answer":"Watermelon"
+
+        },
+        {
+            "id":3,
+            "question":"Bilgisayarin ingilizcesi nedir?",
+            "answer":"Computer"
+
+        },
+    ]
+
+    document.getElementById('question1').innerHTML=veridizini[0].question
+    document.getElementById('question2').innerHTML=veridizini[1].question
+    document.getElementById('question3').innerHTML=veridizini[2].question
+    document.getElementById('question4').innerHTML=veridizini[3].question
+
+   let score = 0
+
+   document.getElementById('submit').addEventListener("click",function(){
+        if(document.getElementById('answer1').value===veridizini[0].answer){
+            score+=1
+        }
+        if(document.getElementById('answer2').value===veridizini[1].answer){
+            score+=1
+        }
+        if(document.getElementById('answer3').value===veridizini[2].answer){
+            score+=1
+        }
+        if(document.getElementById('answer4').value===veridizini[3].answer){
+            score+=1
+        }
+        document.getElementById('result').innerHTML="Score : "+score
+   })
+    
+  </script>
+
+</body>
+</html>
