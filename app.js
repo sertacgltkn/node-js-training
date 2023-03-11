@@ -33,8 +33,8 @@
 var http = require('http');
 var fs = require('fs');
 http.createServer(function (req, res) {
-    fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
+    fs.unlink('mynewfile2.txt', function (err) {
         if (err) throw err;
-        console.log('Saved!');
+        console.log('File deleted!');
       });
 }).listen(3000);
