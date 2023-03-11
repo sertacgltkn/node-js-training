@@ -33,8 +33,8 @@
 var http = require('http');
 var fs = require('fs');
 http.createServer(function (req, res) {
-    fs.unlink('mynewfile2.txt', function (err) {
+    fs.rename('mynewfile1.txt', 'myrenamedfile.txt', function (err) {
         if (err) throw err;
-        console.log('File deleted!');
+        console.log('File Renamed!');
       });
 }).listen(3000);
