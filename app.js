@@ -118,27 +118,16 @@
 // }).listen(3000);
 
 
-var nodemailer = require('nodemailer');
+// const MongoClient = require('mongodb').MongoClient;
+// const url = "mongodb+srv://sertacgltkn:<şifreeee>@cluster0.x88zaoz.mongodb.net/test"
 
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'youremail@gmail.com',
-    pass: 'yourpassword'
-  }
-});
+// const client = new MongoClient(url,{useNewUrlParser:true})
 
-var mailOptions = {
-  from: 'youremail@gmail.com',
-  to: 'myfriend@yahoo.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
-};
-
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-});
+// client.connect(err=>{
+//   const ilkveritabanim = client.db('ilkveritabani')
+//   const koleksiyon = ilkveritabanim.collection('kullanicilar')
+//   koleksiyon.insertOne({isim:"Sertaç Gültekin"},function(err, res){
+//     console.log("veri yğklendi")
+//     client.close()
+//   })
+//   } )
