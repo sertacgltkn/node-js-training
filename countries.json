@@ -1,0 +1,34 @@
+[
+    {
+        "country": "France",
+        "city": "Paris"
+    },
+    {
+        "country": "England",
+        "city": "London"
+    },
+    {
+        "country": "Germany",
+        "city": "Berlin"
+    },
+    {
+        "country": "Spain",
+        "city": "Madrid"
+    },
+    {
+        "country": "Italy",
+        "city": "Rome"
+    },
+    {
+        "country": "Portugal",
+        "city": "Lisbon"
+    },
+    {
+        "country": "Greece",
+        "city": "Athens"
+    },
+    {
+        "country": "Turkey",
+        "city": "Istanbul"
+    }
+]
